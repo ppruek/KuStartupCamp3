@@ -4,20 +4,20 @@ import main_pic from "./main_pic.png";
 
 const Head = {
   position: "absolute",
-  width: "100%",
-  height: 20,
+  width: "100vw",
+  height: 40,
   left: 0,
   top: 0,
+  //   marginLeft: "40px",
   background: "rgba(12, 16, 20, 0.94)"
 };
 
 const Img = {
-  position: "block",
-  width: "100%",
-  height: "545px",
+  display: "block",
+  width: "1440px",
+  height: "700px",
   marginLeft: "auto",
-  marginRight: "auto",
-  opacity: 0.4
+  marginRight: "auto"
 };
 
 const center = {
@@ -29,23 +29,13 @@ const center = {
   transform: "translate(-50%, -50%)"
 };
 
-const myContainer = {
-  position: "relative",
-  width: "50%",
-  fontFamily: "Abhaya Libre Medium"
-};
-
 class Home extends Component {
   render() {
     return (
       <Container text>
         <div style={Head} />
         <Image src={main_pic} style={Img} />
-        <div style={center}>BANDNAMEBAG</div>
-
-        <div style={myContainer}>
-          <h1>BRANDNAME</h1>
-        </div>
+        <div style={center}>LABXURY</div>
       </Container>
     );
   }

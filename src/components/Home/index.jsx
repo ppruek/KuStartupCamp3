@@ -4,7 +4,7 @@ import main_pic from "./main_pic.png";
 
 const Head = {
   position: "absolute",
-  width: "100vw",
+  width: "100%",
   height: 20,
   left: 0,
   top: 0,
@@ -12,11 +12,12 @@ const Head = {
 };
 
 const Img = {
-  display: "block",
-  marginTop: "2.8vh",
+  position: "block",
+  width: "100%",
+  height: "545px",
   marginLeft: "auto",
   marginRight: "auto",
-  opacity: 0.7
+  opacity: 0.4
 };
 
 const center = {
@@ -39,15 +40,8 @@ class Home extends Component {
     return (
       <Container text>
         <div style={Head} />
-        <div
-          style={{
-            background:
-              "linear-gradient(180deg, rgba(0, 0, 0, 0.63) 0%, rgba(255, 255, 255, 0) 100%)"
-          }}
-        >
-          <Image src={main_pic} style={Img} />
-          <div style={center}>BANDNAMEBAG</div>
-        </div>
+        <Image src={main_pic} style={Img} />
+        <div style={center}>BANDNAMEBAG</div>
 
         <div style={myContainer}>
           <h1>BRANDNAME</h1>
